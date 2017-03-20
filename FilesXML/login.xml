@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestData>
+    <url-name>
+        <url>https://172.31.3.49</url>
+        <ip>172.31.3.48</ip>
+    </url-name>
+
+    <user-details>   
+        <username>admin</username>
+        <password>123456</password>
+        <implicitlyWait>30</implicitlyWait>
+    </user-details>
+</TestData> 

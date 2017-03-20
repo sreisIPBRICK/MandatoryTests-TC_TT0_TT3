@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UsersSuite">
+	<test name="UsersTest">
+		<classes>
+			<class name="Tests.AddUserTest" />
+			<groups>
+				<run>
+					<!-- include name="AddIndividualUser" /-->
+					<include name="VeryfyAddIndividualUser" />
+
+					<!--include name="ModifyUser" /-->
+					<include name="VeryfyModifyUser" />
+
+					<!--include name="DeleteUser" /-->
+					<include name="VeryfyDeletedUser" />
+
+					<!--include name="AddMassUsers" /-->
+					<include name="VerifyMass" />
+				</run>
+			</groups>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

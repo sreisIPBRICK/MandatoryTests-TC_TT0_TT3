@@ -1,0 +1,6 @@
+actionuser;usernumber;login;name;email;accountquota;groupnumber;idworkarea;idserver;randompassword;sipurl;mailaccountstatus;mailalias;mailquota;mailmaxsize;mailforward;mailautoreply;homedrive;roamingprofile;employeenumber;departmentnumber;roomnumber;pager;employeetype;businesscategory
+N;10000;administrator;Administrator;administrator@sreis51.com;0;513;1;0;;;1;;0;0;;;Z:;1;;;;;;
+I;20022;lucrecia;Lucrecia Borgia           18Abr;lucrecia@sreis51.com;0;513;1;0;123456;;1;;0;0;;;Z:;1;;;;;;
+I;20021;joana;Joana de Navarra             17Abr;joana@sreis51.com;0;513;1;0;123456;;1;;0;0;;;Z:;1;;;;;;
+I;20023;otho;Marcus Salvius Otho           16Abr;otho@sreis51.com;0;513;1;0;123456;;1;;0;0;;;Z:;1;;;;;;
+I;20024;leonardo;Leonardo da Vinci         15Abr;leonardo@sreis51.com;0;513;1;0;123456;;1;;0;0;;;Z:;1;;;;;;

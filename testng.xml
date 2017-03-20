@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllSuites">
+
+	<test name="Test1">
+		<classes>
+			<class name="Tests.AddUserTest" />
+			<groups>
+				<run>
+					<include name="AddIndividualUser" />
+					<include name="VeryfyAddIndividualUser" />
+
+					<include name="ModifyUser" />
+					<include name="VeryfyModifyUser" />
+
+					<include name="DeleteUser" />
+					<include name="VeryfyDeletedUser" />
+
+					<include name="AddMassUsers" />
+					<include name="VerifyMass" />
+				</run>
+			</groups>
+		</classes>
+	</test>
+	
+	<test name="Test2">
+		<classes>
+			<class name="Tests.NetWorkTest" />
+			<groups>
+				<run>
+					<include name="ChangeIP" />
+					<include name="VerifyIP" />
+
+					<include name="ChangeDomain" />
+					<include name="VerifyDomain" />
+
+					<include name="ChangeGateway" />
+					<include name="VerifyGateway" />
+
+					<include name="ALL" />
+					<include name="VerifyALL" />
+				</run>
+			</groups>
+		</classes>
+	</test>
+
+	<test name="Test3">
+		<classes>
+			<class name="Tests.StopServices" />
+			<groups>
+				<run>
+					<include name="StopServices" />
+					<include name="VerifyServices" />
+				</run>
+			</groups>
+		</classes>
+	</test>
+</suite>

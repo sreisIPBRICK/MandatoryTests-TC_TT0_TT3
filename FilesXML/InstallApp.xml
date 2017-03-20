@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestData>
+    <url-name>
+        <url>https://172.31.3.49</url>
+        <url2>https://iportaldoc.sreis49.com</url2>
+    </url-name>
+
+    <user-details>   
+        <username>admin</username>
+        <password>123456</password>
+        <username2>administrator</username2>
+        <password2>123</password2>
+        <implicitlyWait>1500</implicitlyWait>
+        <fileToUpload>/home/sreis/workspace/ipb6_iportaldoc-v6_0.deb</fileToUpload>
+        
+    </user-details>
+</TestData> 

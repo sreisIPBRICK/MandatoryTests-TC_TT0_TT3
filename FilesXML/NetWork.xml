@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestData>
+    <url-name>
+        <url>https://172.31.3.48</url>       
+        <url2>https://172.31.3.52</url2>
+          
+    	 <IP>172.31.3.48</IP>
+    	 <IP2>172.31.3.52</IP2>
+    	 
+    </url-name>
+
+    <user-details>
+    	   
+        <username>admin</username>
+        <password>123456</password>
+        <implicitlyWait>30</implicitlyWait>
+        
+        <name>sreis</name>
+        <domain>sreis48.com</domain>
+        
+        <name2>sreis</name2>
+        <domain2>sreis52.com</domain2>
+    	
+        <ip0>172</ip0>
+        <ip1>31</ip1> 
+        <ip2>3</ip2> 
+        <ip3>48</ip3>
+        
+        <ipp0>172</ipp0>
+        <ipp1>31</ipp1> 
+        <ipp2>3</ipp2> 
+        <ipp3>52</ipp3>
+        
+        <eth>eth0</eth>
+        
+        <gw0>172</gw0>
+        <gw1>31</gw1>
+        <gw2>3</gw2>
+        <gw3>254</gw3>
+        
+    </user-details>
+</TestData> 

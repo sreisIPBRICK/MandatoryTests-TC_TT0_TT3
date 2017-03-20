@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestData>
+    <url-name>
+        <url>https://172.31.3.49</url>
+        <url2>https://172.31.3.50</url2>
+    </url-name>
+
+    <user-details>
+    	<machineslist>/home/sreis/sreis.IPBRICK.COM/workspace/IPBRICK-AutomaticTests/FilesXML/machineslist.csv</machineslist>   	   
+        <username>admin</username>
+        <password>123456</password>
+        <implicitlyWait>30</implicitlyWait>       
+        <name>RouteY</name>
+        <sipserver>172.31.3.50</sipserver>
+        <Prefix>10</Prefix>
+        
+        
+        
+        
+   	</user-details>
+</TestData> 

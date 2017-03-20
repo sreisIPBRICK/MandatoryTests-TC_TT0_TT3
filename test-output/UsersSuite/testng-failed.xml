@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UsersSuite]">
+  <test name="UsersTest(failed)">
+    <groups>
+      <run>
+        <include name="VeryfyAddIndividualUser"/>
+        <include name="VeryfyModifyUser"/>
+        <include name="VeryfyDeletedUser"/>
+        <include name="VerifyMass"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Tests.AddUserTest">
+        <methods>
+          <include name="VerifyModifyUser"/>
+          <include name="VerifyDeletedUser"/>
+          <include name="VerifyMass"/>
+          <include name="setup"/>
+          <include name="VerifyAddIndividualUser"/>
+        </methods>
+      </class> <!-- Tests.AddUserTest -->
+    </classes>
+  </test> <!-- UsersTest(failed) -->
+</suite> <!-- Failed suite [UsersSuite] -->
