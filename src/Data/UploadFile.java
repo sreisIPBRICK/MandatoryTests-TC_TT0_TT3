@@ -42,7 +42,9 @@ public class UploadFile {
 		computercsvfile.sendKeys(path);
 		accao.click();
         }
-	
+	public void clicksendfile(){
+		usercsvfile.click();
+	}
 	public void FileUploadRobot(WebDriver driver, String path) throws InterruptedException, AWTException{
 		
 		this.driver=driver;

@@ -141,46 +141,34 @@
                   <a name="AddMassUser">
                   </a> <!-- AddMassUser -->
                   <span class="method-name">AddMassUser</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: a is undefined
+Command duration or timeout: 48 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
-Driver info: driver.version: RemoteWebDriver
-Session ID: a7e4da38-f1f0-4ba5-b98e-ab8a86730d3e
+Session ID: dfd1c8fc-3c94-497a-aa44-080d57ae515f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1039)
-	at Pages.MainPage.switchToFrame(MainPage.java:43)
-	at Pages.AdvancedConfigsPage.goToDefenitionsPage(AdvancedConfigsPage.java:86)
-	at Tests.AddUserTest.AddMassUser(AddUserTest.java:309)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Ligação recusada
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 28 more
-Caused by: java.net.ConnectException: Ligação recusada
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:579)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 43 more
-... Removed 24 stack frames
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at Pages.LoginPage.setUserName(LoginPage.java:43)
+	at Pages.LoginPage.loginToPage(LoginPage.java:85)
+	at Tests.AddUserTest.AddMassUser(AddUserTest.java:308)
+Caused by: org.openqa.selenium.WebDriverException: a is undefined
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.wdSession.prototype.setWindow(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/session.js:5097)
+	at &lt;anonymous class&gt;.wdSession.prototype.getWindow(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/session.js:5077)
+	at &lt;anonymous class&gt;.wdSession.prototype.getDocument(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/session.js:5084)
+	at &lt;anonymous class&gt;.Utils.type(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9075)
+	at &lt;anonymous class&gt;.WebElement.sendKeysToElement/&lt;(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12126)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous4533821406259275212webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -279,16 +267,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddMassUser')
 data.setCell(0, 2, 'Tests.AddUserTest')
-data.setCell(0, 3, 2120);
+data.setCell(0, 3, 1184);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyMass')
 data.setCell(1, 2, 'Tests.AddUserTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 3);
 window.suiteTableData['UsersSuite']= { tableData: data, tableDiv: 'times-div-UsersSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-UsersSuite">
               </div> <!-- times-div-UsersSuite -->
             </div> <!-- times-div -->
@@ -340,17 +328,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AddMassUser</span>
-                <span class="method-start">1619 ms</span>
+                <span class="method-start">1630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">shutDownSelenium</span>
-                <span class="method-start">3749 ms</span>
+                <span class="method-start">2823 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">VerifyMass</span>
-                <span class="method-start">3757 ms</span>
+                <span class="method-start">2831 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
