@@ -6,10 +6,11 @@
 
     <property environment="appenv"/>    
     <property name="project.home" value="${basedir}"/>
-	<!-- Set JarFiles Folder's Path. -->
-	<property name="project.jars" value="/home/automatictest/workspace/IPBRICK-AutomaticTests/Jars"/>
+	<!-- Set JarFiles Folder's Path./home/automatictest/Jenkins/workspace/MandatoryTests -->
+	<property name="project.jars" value="${project.home}/Jars"/>
     <property name="report.dest" value="${project.home}/build"/>
     <property name="report.src" value="${project.home}/src"/>
+	<property file="${option}"/>
 	<property name="report.result" value="test-output"/>
 	
     <target name="setPath" unless="suite.classpath">
@@ -30,7 +31,8 @@
             else="${appenv.ANT_HOME}/bin/ant">
                     <os family="windows" />
         </condition>
-    
+        <taskdef name="testng" classpath="${suite.classpath}"
+               classname="org.testng.TestNGAntTask" />    
     </target>    
 
     <!-- To clear -->
@@ -68,7 +70,7 @@
     <!-- run -->
     <target name="run" depends="compile">
         <testng classpath="${suite.classpath}:${report.dest}" suitename="suite1">	
-            <xmlfileset dir="${project.home}" includes="testngAddIndividualUser.xml"/>
+            <xmlfileset dir="${project.home}" includes="${option}.xml"/>
         </testng>       
     </target>	
 
