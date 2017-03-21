@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
- 
+
 <TestData>
-	<property name="project.home" value="${basedir}"/>
-	
+
     <url-name>
         <url>https://172.31.3.51</url>
         <url2>https://groupware.sreis51.com</url2>
@@ -13,7 +12,8 @@
     </url-name>
 
     <user-details>
-    	<userslist>MandatoryTests-TC_TT0_TT3/userslist.csv </userslist>
+    	
+    	<userslist>../userslist.csv </userslist>
     	   
         <username>admin</username>
         <password>123456</password>

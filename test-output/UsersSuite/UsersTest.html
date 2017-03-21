@@ -55,65 +55,275 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UsersTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 21 14:43:41 WET 2017</td>
+<td>Started on:</td><td>Tue Mar 21 16:39:24 WET 2017</td>
 </tr>
-<tr><td>Total time:</td><td>437 seconds (437105 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3766 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>AddIndividualUser VeryfyDeletedUser ModifyUser VerifyMass VeryfyModifyUser AddMassUsers DeleteUser VeryfyAddIndividualUser </td>
+<td>Included groups:</td><td>VerifyMass AddMassUsers </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.AddUserTest.AddIndividualUser()'><b>AddIndividualUser</b><br>Test class: Tests.AddUserTest</td>
+<td title='Tests.AddUserTest.shutDownSelenium()'><b>shutDownSelenium</b><br>Test class: Tests.AddUserTest</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: a7e4da38-f1f0-4ba5-b98e-ab8a86730d3e
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:773)
+	at Tests.AddUserTest.shutDownSelenium(AddUserTest.java:393)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Ligação recusada
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.ConnectException: Ligação recusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 44 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1371887565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1371887565'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: a7e4da38-f1f0-4ba5-b98e-ab8a86730d3e
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:773)
+	at Tests.AddUserTest.shutDownSelenium(AddUserTest.java:393)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Ligação recusada
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.ConnectException: Ligação recusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 44 more
+</pre></div></td>
+<td>0</td>
+<td>Tests.AddUserTest@6a0037a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.AddUserTest.shutDownSelenium()'><b>shutDownSelenium</b><br>Test class: Tests.AddUserTest</td>
 <td></td>
-<td>64</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
+<td>0</td>
+<td>Tests.AddUserTest@6a0037a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='Tests.AddUserTest.AddMassUser()'><b>AddMassUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>26</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
-<tr>
-<td title='Tests.AddUserTest.DeleteUser()'><b>DeleteUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>115</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
-<tr>
-<td title='Tests.AddUserTest.ModifyUser()'><b>ModifyUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>101</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
-<tr>
-<td title='Tests.AddUserTest.VerifyAddIndividualUser()'><b>VerifyAddIndividualUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>71</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
-<tr>
-<td title='Tests.AddUserTest.VerifyDeletedUser()'><b>VerifyDeletedUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>1</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: a7e4da38-f1f0-4ba5-b98e-ab8a86730d3e
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1039)
+	at Pages.MainPage.switchToFrame(MainPage.java:43)
+	at Pages.AdvancedConfigsPage.goToDefenitionsPage(AdvancedConfigsPage.java:86)
+	at Tests.AddUserTest.AddMassUser(AddUserTest.java:309)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Ligação recusada
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: java.net.ConnectException: Ligação recusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 43 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1728220501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728220501'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;posto92&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: a7e4da38-f1f0-4ba5-b98e-ab8a86730d3e
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1039)
+	at Pages.MainPage.switchToFrame(MainPage.java:43)
+	at Pages.AdvancedConfigsPage.goToDefenitionsPage(AdvancedConfigsPage.java:86)
+	at Tests.AddUserTest.AddMassUser(AddUserTest.java:309)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Ligação recusada
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: java.net.ConnectException: Ligação recusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 43 more
+</pre></div></td>
+<td>2</td>
+<td>Tests.AddUserTest@6a0037a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='Tests.AddUserTest.VerifyMass()'><b>VerifyMass</b><br>Test class: Tests.AddUserTest</td>
 <td></td>
-<td>10</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
-<tr>
-<td title='Tests.AddUserTest.VerifyModifyUser()'><b>VerifyModifyUser</b><br>Test class: Tests.AddUserTest</td>
-<td></td>
-<td>40</td>
-<td>Tests.AddUserTest@3445265a</td></tr>
+<td>0</td>
+<td>Tests.AddUserTest@6a0037a4</td></tr>
 </table><p>
 </body>
 </html>

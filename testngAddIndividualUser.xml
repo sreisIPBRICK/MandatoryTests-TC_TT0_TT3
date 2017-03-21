@@ -7,15 +7,15 @@
 			<groups>
 				<run>
 					<!-- include name="AddIndividualUser" /-->
-					<include name="VeryfyAddIndividualUser" />
+					<!--include name="VeryfyAddIndividualUser" /-->
 
 					<!--include name="ModifyUser" /-->
-					<include name="VeryfyModifyUser" />
+					<!-- include name="VeryfyModifyUser" /-->
 
 					<!--include name="DeleteUser" /-->
-					<include name="VeryfyDeletedUser" />
+					<!-- include name="VeryfyDeletedUser" /-->
 
-					<!--include name="AddMassUsers" /-->
+					<include name="AddMassUsers" />
 					<include name="VerifyMass" />
 				</run>
 			</groups>

@@ -4,20 +4,17 @@
   <test name="UsersTest(failed)">
     <groups>
       <run>
-        <include name="VeryfyAddIndividualUser"/>
-        <include name="VeryfyModifyUser"/>
-        <include name="VeryfyDeletedUser"/>
+        <include name="AddMassUsers"/>
         <include name="VerifyMass"/>
       </run>
     </groups>
     <classes>
       <class name="Tests.AddUserTest">
         <methods>
-          <include name="VerifyModifyUser"/>
-          <include name="VerifyDeletedUser"/>
           <include name="VerifyMass"/>
+          <include name="shutDownSelenium"/>
+          <include name="AddMassUser"/>
           <include name="setup"/>
-          <include name="VerifyAddIndividualUser"/>
         </methods>
       </class> <!-- Tests.AddUserTest -->
     </classes>
