@@ -56,12 +56,12 @@ public class NetWorkTest {
 		objMainPage = new MainPage(driver);
 		objAdvDefPage= new AdvancedConfigsPage(driver);
 		objApplyConfigs= new ApplyConfigurations(driver);
-		SSHUploader up = new SSHUploader();
+		//SSHUploader up = new SSHUploader();
 		driver.get(baseUrl);
 		
-		up.connect(IP);
+		/*up.connect(IP);
 		up.executeCommand("echo '' > /var/log/syslog ; echo '' > /opt/system/log/apache/error.log");
-	    up.disconnect();
+	    up.disconnect();*/
 		
 		objLogin.loginToPage(objxml.getxml(ConfigXmlFile,"username"),
 							 objxml.getxml(ConfigXmlFile,"password"));
@@ -81,12 +81,12 @@ public class NetWorkTest {
 		
 		objMainPage.clickLogout();
 		
-		Thread.sleep(120000);
+		Thread.sleep(150000);
 		
 		
 	}
 	
-	@Test(groups={"VerifyIP"},priority=1)
+	@Test(groups={"VerifyIP"},priority=2)
 	public void VerifyIP() throws InterruptedException, ParserConfigurationException, SAXException, IOException, JSchException{
 		System.out.println("@Test: Verify IP");
 		SSHUploader up = new SSHUploader();
@@ -103,7 +103,7 @@ public class NetWorkTest {
 	    							   objxml.getxml(ConfigXmlFile,"ipp3")));
 	}
 		
-	@Test(groups = {"ChangeDomain"},priority=2)	
+	@Test(groups = {"ChangeDomain"},priority=3)	
 	public void ChangeDomain() throws InterruptedException, ParserConfigurationException, SAXException, IOException{
 		System.out.println("@Test: Change Domain");
 		objLogin = new LoginPage(driver);
@@ -124,11 +124,11 @@ public class NetWorkTest {
 		objApplyConfigs.applyConfigs();
 		Assert.assertTrue(objMainPage.getSuccessfullyUpdated().contains("Successfully updated!"));
 		
-		Thread.sleep(60000);
+		Thread.sleep(150000);
 		
 	}
 	
-	@Test(groups={"VerifyDomain"},priority=2)
+	@Test(groups={"VerifyDomain"},priority=4)
 	public void VerifyDomain() throws InterruptedException, ParserConfigurationException, SAXException, IOException, JSchException{
 		System.out.println("@Test: Verify Domain");
 		SSHUploader up = new SSHUploader();
@@ -140,7 +140,7 @@ public class NetWorkTest {
 	    
 	}
 	
-	@Test(groups = {"ChangeGateway"},priority=3)	
+	@Test(groups = {"ChangeGateway"},priority=5)	
 	public void ChangeGateway() throws InterruptedException, ParserConfigurationException, SAXException, IOException{
 		
 		System.out.println("@Test: Change Gateway");
@@ -167,11 +167,11 @@ public class NetWorkTest {
 		Assert.assertTrue(objMainPage.getSuccessfullyUpdated().contains("Successfully updated!"));
 		objMainPage.clickLogout();
 		
-		Thread.sleep(120000);
+		Thread.sleep(150000);
 	
 	}
 	
-	@Test(groups={"VerifyGateway"},priority=3)
+	@Test(groups={"VerifyGateway"},priority=6)
 	public void VerifyGateway() throws InterruptedException, ParserConfigurationException, SAXException, IOException, JSchException{
 		System.out.println("@Test: Verify Gateway");
 		SSHUploader up = new SSHUploader();
@@ -187,7 +187,7 @@ public class NetWorkTest {
 	}
 	
 	
-	@Test(groups={"ALL"},priority=4)
+	@Test(groups={"ALL"},priority=7)
 	public void ALL() throws InterruptedException, ParserConfigurationException, SAXException, IOException, JSchException{
 		
 		System.out.println("@Test: Change All(IP,Domain,Gateway)");
@@ -240,7 +240,7 @@ public class NetWorkTest {
 		Thread.sleep(120000);
 	}
 	
-	@Test(groups={"VerifyALL"},priority=4)
+	@Test(groups={"VerifyALL"},priority=8)
 	public void VerifyALL() throws InterruptedException, ParserConfigurationException, SAXException, IOException, JSchException{
 		
 		System.out.println("@Test: Verify All(IP,Domain,Gateway)");

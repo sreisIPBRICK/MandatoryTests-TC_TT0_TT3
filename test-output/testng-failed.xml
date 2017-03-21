@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [UsersSuite]">
-  <test name="UsersTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NetworkSuite]">
+  <test name="NetworkTest(failed)">
     <groups>
       <run>
-        <include name="VeryfyAddIndividualUser"/>
-        <include name="VeryfyModifyUser"/>
-        <include name="VeryfyDeletedUser"/>
-        <include name="VerifyMass"/>
+        <include name="ChangeIP"/>
+        <include name="VerifyIP"/>
+        <include name="ChangeDomain"/>
+        <include name="VerifyDomain"/>
+        <include name="ChangeGateway"/>
+        <include name="VerifyGateway"/>
+        <include name="ALL"/>
+        <include name="VerifyALL"/>
       </run>
     </groups>
     <classes>
-      <class name="Tests.AddUserTest">
+      <class name="Tests.NetWorkTest">
         <methods>
-          <include name="VerifyModifyUser"/>
-          <include name="VerifyDeletedUser"/>
-          <include name="VerifyMass"/>
           <include name="setup"/>
-          <include name="VerifyAddIndividualUser"/>
+          <include name="ALL"/>
+          <include name="shutDownSelenium"/>
+          <include name="VerifyDomain"/>
+          <include name="ChangeDomain"/>
+          <include name="VerifyIP"/>
+          <include name="VerifyGateway"/>
+          <include name="ChangeGateway"/>
+          <include name="ChangeIP"/>
         </methods>
-      </class> <!-- Tests.AddUserTest -->
+      </class> <!-- Tests.NetWorkTest -->
     </classes>
-  </test> <!-- UsersTest(failed) -->
-</suite> <!-- Failed suite [UsersSuite] -->
+  </test> <!-- NetworkTest(failed) -->
+</suite> <!-- Failed suite [NetworkSuite] -->
