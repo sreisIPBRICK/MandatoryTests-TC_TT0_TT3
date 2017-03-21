@@ -309,7 +309,8 @@ public class AddUserTest {
 		objAdvDefPage.goToDefenitionsPage();
 		objDirectory.goToUserListPage();
 		objDirectory.ClickMassOperation();
-		objUploadFile.CVSUpload(driver,objxml.getxml(ConfigXmlFile,"userslist"));
+		objUploadFile.FileUploadRobot(driver, objxml.getxml(ConfigXmlFile, "userslist"));
+		//objUploadFile.CVSUpload(driver,objxml.getxml(ConfigXmlFile,"userslist"));
 		objApplyConfigs.goToApplyConfigsPage();
 		objApplyConfigs.applyConfigs();			
 		Assert.assertTrue(objMainPage.getSuccessfullyUpdated().contains("Successfully updated!"));
