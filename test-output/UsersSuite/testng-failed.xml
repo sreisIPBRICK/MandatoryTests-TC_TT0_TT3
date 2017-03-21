@@ -5,13 +5,11 @@
     <groups>
       <run>
         <include name="AddMassUsers"/>
-        <include name="VerifyMass"/>
       </run>
     </groups>
     <classes>
       <class name="Tests.AddUserTest">
         <methods>
-          <include name="VerifyMass"/>
           <include name="shutDownSelenium"/>
           <include name="AddMassUser"/>
           <include name="setup"/>
