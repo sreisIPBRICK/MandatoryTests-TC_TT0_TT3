@@ -309,8 +309,11 @@ public class AddUserTest {
 		objAdvDefPage.goToDefenitionsPage();
 		objDirectory.goToUserListPage();
 		objDirectory.ClickMassOperation();
-		objUploadFile.clicksendfile();
+		objUploadFile.clicksendfile(driver);
+		Thread.sleep(2000);
 		objUploadFile.FileUploadRobot(driver, objxml.getxml(ConfigXmlFile, "userslist"));
+		objUploadFile.clickupload(driver);
+		Thread.sleep(10000);
 		//objUploadFile.CVSUpload(driver,objxml.getxml(ConfigXmlFile,"userslist"));
 		objApplyConfigs.goToApplyConfigsPage();
 		objApplyConfigs.applyConfigs();			
