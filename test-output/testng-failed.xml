@@ -4,14 +4,13 @@
   <test name="UsersTest(failed)">
     <groups>
       <run>
-        <include name="AddMassUsers"/>
+        <include name="VerifyMass"/>
       </run>
     </groups>
     <classes>
       <class name="Tests.AddUserTest">
         <methods>
-          <include name="shutDownSelenium"/>
-          <include name="AddMassUser"/>
+          <include name="VerifyMass"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.AddUserTest -->

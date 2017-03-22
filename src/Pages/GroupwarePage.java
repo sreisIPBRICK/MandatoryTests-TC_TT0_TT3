@@ -120,7 +120,7 @@ public class GroupwarePage {
 				String merdas=Integer.toString(i);
 				String mail=objxml.getxml(ConfigXmlFile,"log"+i);
 				mail.concat(merdas).concat(objxml.getxml(ConfigXmlFile,"domain"));
-				System.out.print("ReadXmlSendMailFunction:"+mail);
+				//System.out.print("ReadXmlSendMailFunction:"+mail);
 				this.sendMail(mail);
 				i++;
 			}
@@ -167,7 +167,7 @@ public class GroupwarePage {
             	} 
                 // use comma as separator
                 String[] name = line.split(cvsSplitBy);             
-                System.out.println("ReadcvsFileAndSendMail():"+ name[2] + "," + name[4] + "," + name[9]);       
+                //System.out.println("ReadcvsFileAndSendMail():"+ name[2] + "," + name[4] + "," + name[9]);       
                 objLogin.loginGroupware(name[2],name[9]);
                 //System.out.println("ReadcvsFileAndSendMail2()"+ driver.getTitle());
                 Assert.assertTrue(driver.getTitle().contains("Mail ::"));
