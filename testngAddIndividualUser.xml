@@ -15,8 +15,8 @@
 					<!--include name="DeleteUser" /-->
 					<!-- include name="VeryfyDeletedUser" /-->
 
-					<include name="AddMassUsers" />
-					<!-- include name="VerifyMass" /-->
+					<!--include name="AddMassUsers" /-->
+					<include name="VerifyMass" />
 				</run>
 			</groups>
 		</classes>

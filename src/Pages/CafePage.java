@@ -158,7 +158,8 @@ public class CafePage {
 		driver.switchTo().window(winHandleBefore);
 		// Continue with original browser (first window)
 		Thread.sleep(5000);
-		logout.click();
+		driver.get("https://cafe.sreis51.com/site/logout");
+		//logout.click();
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////		
 	}

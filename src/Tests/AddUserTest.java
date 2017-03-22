@@ -332,8 +332,12 @@ public class AddUserTest {
 		driver.manage().window().maximize();
 		objCafe.loginCafe("Administrator", "123");
 		objCafe.SendMailbyCafe(objCafe.GetMassList());
-		objCafe.logout();
-
+		Thread.sleep(2000);
+		driver.get("https://cafe.sreis51.com/site/logout");
+		//objCafe.logout();
+		
+		//System.out.println("AddusersTest.java-VerifyMass Print: Passei aqui");
+		
 		String csvFile = objxml.getxml(ConfigXmlFile,"userslist");
         BufferedReader br = null;
         String line = "";
@@ -353,6 +357,7 @@ public class AddUserTest {
         		objCafe.gotoMyFiles();
         		objCafe.uploadfile();		
         		objCafe.CheckMailbyCafe();
+        		//objCafe.logout();
                }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
