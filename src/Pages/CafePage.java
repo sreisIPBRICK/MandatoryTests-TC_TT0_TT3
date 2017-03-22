@@ -157,7 +157,7 @@ public class CafePage {
 		// Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
 		// Continue with original browser (first window)
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		logout.click();
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////		
@@ -267,7 +267,7 @@ public void ReadcvsAndVerifyMassUsers(WebDriver driver) throws ParserConfigurati
 	}
 	
 	public void logout() throws InterruptedException{
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		logout.click();
 	}
 	
