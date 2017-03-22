@@ -107,10 +107,10 @@ public class CafePage {
 		js.executeScript("arguments[0].click();", MyFiles);
 		//System.out.print(MyFiles.isDisplayed());
 	}
-	public void uploadfile() throws InterruptedException, AWTException{
+	public void uploadfile() throws InterruptedException, AWTException, ParserConfigurationException, SAXException, IOException{
 		objUploadFile= new UploadFile();
 		upload.click();
-		objUploadFile.FileUploadRobot(driver,"/home/sreis/sreis.IPBRICK.COM/workspace/SetupEnvironmentAutoTests.odt");
+		objUploadFile.FileUploadRobot(driver,objxml.getxml(ConfigXmlFile,"userfile"));
 		submit.click();
 		Assert.assertTrue(file.getText().contains("AutoTests.odt"));
 		//logout.click();
