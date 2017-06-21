@@ -12,16 +12,10 @@ public class AdvancedConfigsPage{
 	WebDriver driver;
 	MainPage objMainPage;
 	
-	@FindBy(id="menuheader4")
-	WebElement AdvancedConfigsMenu;
-	@FindBy(linkText="IPBrick")
-	WebElement IpbrickBtn;
-	/*@FindBy(xpath=".//*[@id='menubody']/descendant::span[text()='IPBrick']")
-	WebElement IpbrickBtn;*/
-	@FindBy(linkText="Update")
-	WebElement UpdateBtn;
-	@FindBy(linkText="Insert")
-	WebElement Insert;
+	@FindBy(id="menuheader4") WebElement AdvancedConfigsMenu;
+	@FindBy(linkText="IPBrick")	WebElement IpbrickBtn;
+	@FindBy(linkText="Update") WebElement UpdateBtn;
+	@FindBy(linkText="Insert") WebElement Insert;
 	@FindBy(linkText="Definitions")
 	WebElement DefenitionsBtn;
 	@FindBy(linkText= "ETH0")
